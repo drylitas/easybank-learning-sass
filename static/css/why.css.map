@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,WAAW;EACvB,WAAW,EAAE,IAAI;CAYlB;;AAfD,AAIE,IAJE,CAIF,KAAK,CAAC;EACJ,aAAa,EAAE,MAAM;CACtB;;AACA,AACC,UADK,CACL,KAAK,CAAC;EACJ,aAAa,EAAE,MAAM;CACtB;;AAHF,AAIC,UAJK,CAIL,GAAG,CAAC;EACF,aAAa,EAAE,MAAM;CACtB",
+    "sources": [
+        "../../src/sass/why.scss"
+    ],
+    "names": [],
+    "file": "why.css"
+}
