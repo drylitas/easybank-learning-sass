@@ -1,7 +1,7 @@
 .why {
   text-align: center;
   background: var(--gray);
-  padding-top: 8rem;
+  padding: 8rem 0;
 }
 
 .why .copy {

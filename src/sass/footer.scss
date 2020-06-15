@@ -1,0 +1,29 @@
+.footer {
+//   border: 3px dashed firebrick;
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 3.2rem 0;
+  text-align: center;
+  &__logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 3.2rem;
+  }
+  &__social {
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    grid-column-gap: 1.6rem;
+    justify-content: center;
+    margin: 4rem 0;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+    margin-bottom: 3.2rem;
+  }
+  &__copyright {
+    color: var(--grayblue);
+    margin-top: 3.2rem;
+  }
+}

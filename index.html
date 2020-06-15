@@ -29,7 +29,7 @@
       </nav>
       <!-- </div> -->
     </header>
-    <section class="hero is-hidden">
+    <section class="hero">
       <div class="wrapper">
         <div class="hero__image"></div>
         <h1 class="title__h1">Next generation digital banking</h1>
@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <section class="why is-hidden">
+    <section class="why">
       <div class="wrapper">
         <h1 class="title__h1">
           Why choose Easybank?
@@ -103,46 +103,85 @@
         <h1 class="title__h1">
           Latest Articles
         </h1>
-        <article class="latestArticles-item">
-          <img src="" alt="" />
-          <small>By Claire Robinson</small>
-          <h3>Receive money in any currency with no fees</h3>
-          <p class="copy">
-            The world is getting smaller and we’re becoming more mobile. So why
-            should you be forced to only receive money in a single …
-          </p>
-        </article>
-
-        <article class="latestArticles-item">
-          <img src="" alt="" />
-          <small>By Wilson Hutton</small>
-          <h3>Treat yourself without worrying about money</h3>
-          <p class="copy">
-            Our simple budgeting feature allows you to separate out your
-            spending and set realistic limits each month. That means you …
-          </p>
-        </article>
-
-        <article class="latestArticles-item">
-          <img src="" alt="" />
-          <small>By Wilson Hutton</small>
-          <h3>Take your Easybank card wherever you go</h3>
-          <p class="copy">
-            We want you to enjoy your travels. This is why we don’t charge any
-            fees on purchases while you’re abroad. We’ll even show you …
-          </p>
-        </article>
-
-        <article class="latestArticles-item">
-          <img src="" alt="" />
-          <small>By Claire Robinson</small>
-          <h3>Our invite-only Beta accounts are now live!</h3>
-          <p class="copy">
-            After a lot of hard work by the whole team, we’re excited to launch
-            our closed beta. It’s easy to request an invite through the site ...
-          </p>
-        </article>
+        <div class="latestArticles__grid">
+          <article class="latestArticles__item">
+            <img height="200" src="./static/img/image-currency.jpg" alt="" />
+            <div class="latestArticles__item-content">
+              <small>By Claire Robinson</small>
+              <h3 class="title__h3">
+                Receive money in any currency with no fees
+              </h3>
+              <p class="copy">
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
+          </article>
+          <article class="latestArticles__item">
+            <img height="200" src="./static/img/image-restaurant.jpg" alt="" />
+            <div class="latestArticles__item-content">
+              <small>By Wilson Hutton</small>
+              <h3 class="title__h3">
+                Treat yourself without worrying about money
+              </h3>
+              <p class="copy">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
+          </article>
+          <article class="latestArticles__item">
+            <img height="200" src="./static/img/image-plane.jpg" alt="" />
+            <div class="latestArticles__item-content">
+              <small>By Wilson Hutton</small>
+              <h3 class="title__h3">Take your Easybank card wherever you go</h3>
+              <p class="copy">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
+          </article>
+          <article class="latestArticles__item">
+            <img height="200" src="./static/img/image-confetti.jpg" alt="" />
+            <div class="latestArticles__item-content">
+              <small>By Claire Robinson</small>
+              <h3 class="title__h3">
+                Our invite-only Beta accounts are now live!
+              </h3>
+              <p class="copy">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site ...
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__grid">
+          <img class="footer__logo" src="./static/img/logo-footer.svg" alt="" />
+          <div class="footer__social">
+            <a href="#" class="icon__facebook"></a>
+            <a href="#" class="icon__youtube"></a>
+            <a href="#" class="icon__twitter"></a>
+            <a href="#" class="icon__pinterest"></a>
+            <a href="#" class="icon__instagram"></a>
+          </div>
+
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">Contact</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Support</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <div>
+            <button class="button">Request Invite</button>
+          </div>
+          <div class="footer__copyright">© Easybank. All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

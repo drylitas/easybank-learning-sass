@@ -1,0 +1,37 @@
+.latestArticles {
+  background: var(--lightGray);
+  padding: 8rem 0;
+}
+
+.latestArticles .title__h1 {
+  text-align: center;
+}
+
+.latestArticles__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 3.2rem;
+}
+
+.latestArticles__item {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.latestArticles__item-content {
+  padding: 2.4rem;
+}
+
+.latestArticles__item small {
+  color: var(--grayBlue);
+  margin-bottom: 1.6rem;
+  display: block;
+}
+
+.latestArticles__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=latestArticles.css.map */

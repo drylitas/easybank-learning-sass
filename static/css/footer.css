@@ -1,0 +1,37 @@
+.footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 3.2rem 0;
+  text-align: center;
+}
+
+.footer__logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 3.2rem;
+}
+
+.footer__social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25px)[5];
+      grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  color: var(--gray);
+  margin-bottom: 3.2rem;
+}
+
+.footer__copyright {
+  color: var(--grayblue);
+  margin-top: 3.2rem;
+}
+/*# sourceMappingURL=footer.css.map */
