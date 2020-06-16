@@ -38,6 +38,9 @@ body {
 
 .wrapper {
   padding: 0 2.4rem;
+  max-width: 1115px;
+  margin: auto;
+  width: 100%;
 }
 
 @mixin title {
@@ -62,6 +65,7 @@ body {
   &__h2 {
     @include title;
     font-size: 2rem;
+    font-weight: 400;
   }
   &__h3 {
     @include title;

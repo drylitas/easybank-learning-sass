@@ -1,9 +1,10 @@
 .latestArticles {
-//   border: 5px solid salmon;
+  //   border: 5px solid salmon;
   background: var(--lightGray);
   padding: 8rem 0;
-  .title__h1{
-      text-align: center;
+  .title__h1 {
+    text-align: center;
+    margin-bottom: 2.4rem;
   }
   &__grid {
     display: grid;
@@ -17,14 +18,36 @@
     &-content {
       padding: 2.4rem;
     }
-    small{
-        color: var(--grayBlue);
-        margin-bottom: 1.6rem;
-        display: block;
+    small {
+      color: var(--grayBlue);
+      margin-bottom: 1.6rem;
+      display: block;
     }
     img {
       width: 100%;
       object-fit: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    // border: 2px dashed indigo;
+    .title__h1 {
+      text-align: left;
+    }
+    &__item {
+      &-content {
+        padding: 2.4rem;
+      }
+    }
+    &__grid {
+      display: grid;
+      grid-column-gap: 3.2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }

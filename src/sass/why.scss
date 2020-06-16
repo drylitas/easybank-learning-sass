@@ -13,4 +13,20 @@
       margin-bottom: 2.4rem;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    border: 2px dashed deeppink;
+    text-align: left;
+    .why__grid{
+      display: grid;
+      grid-column-gap: 1.6rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .why__grid{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
 }

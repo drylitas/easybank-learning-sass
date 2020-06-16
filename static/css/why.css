@@ -15,4 +15,25 @@
 .why__item img {
   margin-bottom: 2.4rem;
 }
+
+@media screen and (min-width: 768px) {
+  .why {
+    border: 2px dashed deeppink;
+    text-align: left;
+  }
+  .why .why__grid {
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 1.6rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .why .why__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
 /*# sourceMappingURL=why.css.map */

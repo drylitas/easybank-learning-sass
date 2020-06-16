@@ -16,4 +16,57 @@
   background-size: 345px, cover;
   margin-bottom: 1.6rem;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    border: 3px solid firebrick;
+    text-align: left;
+    background: url("../../static/img/bg-intro-desktop.svg") left 650px top -290px no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .hero__content {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 550px;
+        grid-template-areas: "description image";
+    -ms-grid-columns: 370px 1fr;
+        grid-template-columns: 370px 1fr;
+  }
+  .hero__image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+    min-height: inherit;
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 0;
+    height: 768px;
+    background: url("../../static/img/image-mockups.png") left bottom no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__imageSrc {
+    display: block;
+    position: relative;
+    top: -150px;
+    z-index: 1;
+  }
+  .hero__image {
+    border: 10px solid pink;
+    background: none;
+    left: 150px;
+    right: 0;
+    top: 0;
+  }
+}
 /*# sourceMappingURL=hero.css.map */

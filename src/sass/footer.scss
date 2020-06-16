@@ -1,5 +1,5 @@
 .footer {
-//   border: 3px dashed firebrick;
+  //   border: 3px dashed firebrick;
   background: var(--darkBlue);
   color: var(--white);
   padding: 3.2rem 0;
@@ -25,5 +25,37 @@
   &__copyright {
     color: var(--grayblue);
     margin-top: 3.2rem;
+  }
+  @media screen and (min-width: 1024px) {
+    // background: lightcoral;
+    .wrapper {
+      display: grid;
+      grid-column-gap: 8rem;
+      grid-template-columns: 200px 1fr 400px;
+      grid-template-areas:
+        "logo links button"
+        "social links copyright";
+    }
+    &__links {
+      grid-area: links;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: left;
+    }
+    &__logo {
+      grid-area: logo;
+      margin: initial;
+    }
+    &__social {
+      grid-area: social;
+    }
+    &__button {
+      grid-area: button;
+      text-align: right;
+    }
+    &__copyright {
+      grid-area: copyright;
+      text-align: right;
+    }
   }
 }

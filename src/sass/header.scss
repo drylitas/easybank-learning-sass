@@ -1,6 +1,25 @@
-.header{
-    // border: 1px solid rgb(78, 53, 119);
-    padding: 1.6rem 2.4rem;
+.header {
+  //   border: 3px solid rgb(78, 53, 119);
+  padding: 1.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    align-self: center; /*Para que tome el tamaño*/
+  }
+  .button {
+    display: none;
+  }
+  &__content {
     display: flex;
     justify-content: space-between;
+  }
+  @media screen and (min-width: 1024px) {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .button {
+      display: inline;
+    }
+  }
 }
