@@ -6,6 +6,9 @@
     font-weight: 300;
     margin-bottom: 4rem;
   }
+  &__imageSrc {
+    display: none;
+  }
   &__image {
     height: 30rem;
     margin: 0 calc(-1 * var(--wrapperSpace));
@@ -15,9 +18,9 @@
     background-size: 345px, cover;
     margin-bottom: 1.6rem;
   }
+  
 
   @media screen and (min-width: 768px) {
-    border: 3px solid firebrick;
     text-align: left;
     background: url("../../static/img/bg-intro-desktop.svg") left 650px top -290px
       no-repeat;
@@ -36,16 +39,18 @@
     &__description {
       // border: 1px solid green;
     }
-
+    &__imageSrc {
+      display: none;
+    }
     &__image {
       grid-area: image;
       min-height: inherit;
       // background: none;
       position: absolute;
       // border: 1px solid purple;
-      width: 500px;
+      width: 600px;
       // left: 550px;
-      left: 0;
+      left: 70px;
       top: 0;
       height: 768px;
       background: url("../../static/img/image-mockups.png") left bottom
@@ -65,7 +70,7 @@
       z-index: 1;
     }
     &__image {
-      border: 10px solid pink;
+      // border: 10px solid pink;
       // background: url('../images/image-mockups.png') right bottom no-repeat;
       // background-size: 100%;
       background: none;

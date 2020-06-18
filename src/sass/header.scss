@@ -3,6 +3,9 @@
   padding: 1.6rem 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  background: white;
   &__logo {
     align-self: center; /*Para que tome el tamaño*/
   }

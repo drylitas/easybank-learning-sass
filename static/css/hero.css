@@ -9,6 +9,10 @@
   margin-bottom: 4rem;
 }
 
+.hero__imageSrc {
+  display: none;
+}
+
 .hero__image {
   height: 30rem;
   margin: 0 calc(-1 * var(--wrapperSpace));
@@ -19,7 +23,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    border: 3px solid firebrick;
     text-align: left;
     background: url("../../static/img/bg-intro-desktop.svg") left 650px top -290px no-repeat;
     background-size: cover;
@@ -39,14 +42,17 @@
     -ms-grid-columns: 370px 1fr;
         grid-template-columns: 370px 1fr;
   }
+  .hero__imageSrc {
+    display: none;
+  }
   .hero__image {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: image;
     min-height: inherit;
     position: absolute;
-    width: 500px;
-    left: 0;
+    width: 600px;
+    left: 70px;
     top: 0;
     height: 768px;
     background: url("../../static/img/image-mockups.png") left bottom no-repeat;
@@ -62,7 +68,6 @@
     z-index: 1;
   }
   .hero__image {
-    border: 10px solid pink;
     background: none;
     left: 150px;
     right: 0;

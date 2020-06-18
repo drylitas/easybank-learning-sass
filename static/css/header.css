@@ -7,6 +7,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  background: white;
 }
 
 .header__logo {

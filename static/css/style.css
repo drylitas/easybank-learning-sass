@@ -7,6 +7,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  background: white;
 }
 
 .header__logo {
@@ -46,6 +49,8 @@
 .menu {
   display: none;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu__button {
@@ -54,10 +59,48 @@
   background: url("../../static/img/icon-hamburger.svg") no-repeat center;
 }
 
+.menu .menu__item:first-of-type a {
+  border-radius: .8rem .8rem 0 0;
+  padding-top: 3.2rem !important;
+}
+
+.menu .menu__item:last-of-type a {
+  border-radius: 0 0 .8rem .8rem;
+  padding-bottom: 3.2rem !important;
+}
+
 .menu a {
   text-decoration: none;
-  color: var(--grayblue);
+  color: var(--darkBlue);
   padding: 0 1.6rem;
+  cursor: pointer;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked ~ .menu__button {
+  background: url("../../static/img/icon-close.svg") no-repeat center;
+}
+
+.menu__checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 1.6em;
+  left: 0rem;
+  right: 0rem;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--darkBlue)), color-stop(90%, transparent));
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+}
+
+.menu__checkbox:checked ~ .menu a {
+  background: white;
+  padding: 0.8rem 1.6rem;
+  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -84,6 +127,10 @@
   margin-bottom: 4rem;
 }
 
+.hero__imageSrc {
+  display: none;
+}
+
 .hero__image {
   height: 30rem;
   margin: 0 calc(-1 * var(--wrapperSpace));
@@ -94,7 +141,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    border: 3px solid firebrick;
     text-align: left;
     background: url("../../static/img/bg-intro-desktop.svg") left 650px top -290px no-repeat;
     background-size: cover;
@@ -114,14 +160,17 @@
     -ms-grid-columns: 370px 1fr;
         grid-template-columns: 370px 1fr;
   }
+  .hero__imageSrc {
+    display: none;
+  }
   .hero__image {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: image;
     min-height: inherit;
     position: absolute;
-    width: 500px;
-    left: 0;
+    width: 600px;
+    left: 70px;
     top: 0;
     height: 768px;
     background: url("../../static/img/image-mockups.png") left bottom no-repeat;
@@ -137,7 +186,6 @@
     z-index: 1;
   }
   .hero__image {
-    border: 10px solid pink;
     background: none;
     left: 150px;
     right: 0;
@@ -165,7 +213,6 @@
 
 @media screen and (min-width: 768px) {
   .why {
-    border: 2px dashed deeppink;
     text-align: left;
   }
   .why .why__grid {

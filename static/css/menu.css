@@ -1,6 +1,8 @@
 .menu {
   display: none;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu__button {
@@ -9,10 +11,48 @@
   background: url("../../static/img/icon-hamburger.svg") no-repeat center;
 }
 
+.menu .menu__item:first-of-type a {
+  border-radius: .8rem .8rem 0 0;
+  padding-top: 3.2rem !important;
+}
+
+.menu .menu__item:last-of-type a {
+  border-radius: 0 0 .8rem .8rem;
+  padding-bottom: 3.2rem !important;
+}
+
 .menu a {
   text-decoration: none;
-  color: var(--grayblue);
+  color: var(--darkBlue);
   padding: 0 1.6rem;
+  cursor: pointer;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__checkbox:checked ~ .menu__button {
+  background: url("../../static/img/icon-close.svg") no-repeat center;
+}
+
+.menu__checkbox:checked ~ .menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 1.6em;
+  left: 0rem;
+  right: 0rem;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--darkBlue)), color-stop(90%, transparent));
+  background: linear-gradient(to bottom, var(--darkBlue) 0%, transparent 90%);
+}
+
+.menu__checkbox:checked ~ .menu a {
+  background: white;
+  padding: 0.8rem 1.6rem;
+  display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
