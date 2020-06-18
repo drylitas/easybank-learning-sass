@@ -405,6 +405,7 @@ body {
   font-size: 1.6rem;
   color: var(--grayblue);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .wrapper {
